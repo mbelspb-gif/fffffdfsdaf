@@ -1,81 +1,27 @@
--- Variables
-local speedValue = 16 -- Default speed value
- 
--- Create GUI
-local gui = Instance.new("ScreenGui")
-gui.Name = "JN HH Gaming"
-gui.Parent = game.Players.LocalPlayer.PlayerGui
- 
-local frame = Instance.new("Frame")
-frame.Name = "SpeedFrame"
-frame.Size = UDim2.new(0, 200, 0, 100)
-frame.Position = UDim2.new(0, 10, 0, 10)
-frame.BackgroundColor3 = Color3.new(0, 0, 0)
-frame.BackgroundTransparency = 0.5
-frame.Parent = gui
- 
-local speedLabel = Instance.new("TextLabel")
-speedLabel.Name = "SpeedLabel"
-speedLabel.Size = UDim2.new(0, 180, 0, 30)
-speedLabel.Position = UDim2.new(0, 10, 0, 10)
-speedLabel.BackgroundColor3 = Color3.new(0, 0, 0)
-speedLabel.TextColor3 = Color3.new(1, 1, 1)
-speedLabel.TextSize = 18
-speedLabel.Text = "Speed: " .. speedValue
-speedLabel.Parent = frame
- 
-local decreaseButton = Instance.new("TextButton")
-decreaseButton.Name = "DecreaseButton"
-decreaseButton.Size = UDim2.new(0, 50, 0, 30)
-decreaseButton.Position = UDim2.new(0, 10, 0, 50)
-decreaseButton.BackgroundColor3 = Color3.new(0, 1, 0)
-decreaseButton.TextColor3 = Color3.new(1, 1, 1)
-decreaseButton.TextSize = 14
-decreaseButton.Text = "-"
-decreaseButton.Parent = frame
- 
-local increaseButton = Instance.new("TextButton")
-increaseButton.Name = "IncreaseButton"
-increaseButton.Size = UDim2.new(0, 50, 0, 30)
-increaseButton.Position = UDim2.new(0, 140, 0, 50)
-increaseButton.BackgroundColor3 = Color3.new(0, 1, 0)
-increaseButton.TextColor3 = Color3.new(1, 1, 1)
-increaseButton.TextSize = 14
-increaseButton.Text = "+"
-increaseButton.Parent = frame
- 
--- Functions
-local function updateSpeedLabel()
-    speedLabel.Text = "Speed: " .. speedValue
-end
- 
-local function decreaseSpeed()
-    if speedValue > 1 then
-        speedValue = speedValue - 1
-        updateSpeedLabel()
-    end
-end
- 
-local function increaseSpeed()
-    speedValue = speedValue + 1
-    updateSpeedLabel()
-end
- 
-local function onDecreaseButtonClicked()
-    decreaseSpeed()
-end
- 
-local function onIncreaseButtonClicked()
-    increaseSpeed()
-end
- 
--- Event connections
-decreaseButton.MouseButton1Click:Connect(onDecreaseButtonClicked)
-increaseButton.MouseButton1Click:Connect(onIncreaseButtonClicked)
- 
--- Main loop
-while true do
-    -- Modify the speed of the character (you need to replace this with the appropriate code for your specific game)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedValue
-    wait(0.1) -- Adjust the wait time as desired
-end
+#profile-update-interval: 1
+#profile-title: 🏳️ TritonVPN
+#profile-web-page-url:
+#support-url: 
+#announce: Это полная подписка, сверху - для мобильного интернета, снизу для wi-fi 
+
+#subscription-userinfo: upload=0; download=0; total=0; expire=25555555560576000
+
+vless://ed3f447e-1b2b-4d16-a797-151ab1949b93@185.231.101.211:8443?security=reality&encryption=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=auto.quattro-tech.ru&sid=43dcff53849b81e6#%F0%9F%92%8E+%D0%90%D0%B2%D1%82%D0%BE+%7C+WI-FI+%E2%9A%A1%E2%9A%A1%EF%B8%8F%E2%9A%A1%EF%B8%8F
+vless://d477293f-c3be-47bb-a9a3-956089552a3c@178.248.238.85:8443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=ads.x5.ru&sid=43dcff53849b81e6#%F0%9F%92%8E+%D0%90%D0%B2%D1%82%D0%BE+%7C+%D0%9C%D0%BE%D0%B1.+%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82+%E2%9A%A1%E2%9A%A1%E2%9A%A1
+vless://ed3f447e-1b2b-4d16-a797-151ab1949b93@217.16.22.2:443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=43dcff53849b81e6#%E2%AC%87%EF%B8%8F%D0%94%D0%BB%D1%8F+%D0%BC%D0%BE%D0%B1.+%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B0+%E2%AC%87%EF%B8%8F
+vless://ed3f447e-1b2b-4d16-a797-151ab1949b93@217.16.22.2:443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=43dcff53849b81e6#%F0%9F%87%B8%F0%9F%87%AA++%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B01%5D
+vless://ed3f447e-1b2b-4d16-a797-151ab1949b93@217.16.22.10:8443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=43dcff53849b81e6#%F0%9F%87%AA%F0%9F%87%AA++%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B02%5D
+vless://ed3f447e-1b2b-4d16-a797-151ab1949b93@217.16.21.250:9443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=43dcff53849b81e6#%F0%9F%87%B3%F0%9F%87%B1+%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B03%5D
+vless://ed3f447e-1b2b-4d16-a797-151ab1949b93@217.16.21.221:10443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=43dcff53849b81e6#%F0%9F%87%B1%F0%9F%87%BB++%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B04%5D
+vless://f0cd8dda-39e5-4ab1-b1ad-0a39f54a9fdd@de.vz-or.com:443?security=reality&encryption=none&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=sun9-37.userapi.com&sid=abbcd128#%F0%9F%87%B5%F0%9F%87%B1%E2%9A%A1%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%5B05%5D
+vless://f0cd8dda-39e5-4ab1-b1ad-0a39f54a9fdd@de.vz-or.com:443?security=reality&encryption=none&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=sun9-37.userapi.com&sid=abbcd128#%F0%9F%87%B5%F0%9F%87%B1%E2%9A%A1+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B06%5D
+vless://f0cd8dda-39e5-4ab1-b1ad-0a39f54a9fdd@de.vz-or.com:443?security=reality&encryption=none&pbk=RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=sun9-37.userapi.com&sid=abbcd128#%F0%9F%87%B5%F0%9F%87%B1%E2%9A%A1%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B07%5D
+vless://130ad324-3512-11f1-ada8-dcb6e8e27879@62.84.117.99:443?security=reality&encryption=none&pbk=2IAFC23dkBm2ZRPTcxSWZ5YkpVxJufIIZn3-aSPRH10&headerType=none&fp=randomized&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=ads.x5.ru#%F0%9F%87%B7%F0%9F%87%BA%E2%9A%A1+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B08%5D
+vless://feebefe1-e012-4128-ab70-9e3550015c19@ru01.myxavpn.com:443?security=reality&encryption=none&echfq=none&pbk=OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=ru01.myxavpn.com&sid=d67ec5a8fc40ebea#%F0%9F%87%AC%F0%9F%87%A7+%E2%9A%A1%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B09%5D
+vless://feebefe1-e012-4128-ab70-9e3550015c19@ru03.myxavpn.com:443?security=reality&encryption=none&echfq=none&pbk=OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=ru03.myxavpn.com&sid=d67ec5a8fc40ebea#%F0%9F%87%AC%F0%9F%87%A7+%E2%9A%A1%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B010%5D
+vless://feebefe1-e012-4128-ab70-9e3550015c19@ru08.myxavpn.com:443?security=reality&encryption=none&echfq=none&pbk=OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw&headerType=none&fp=chrome&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=ru08.myxavpn.com&sid=d67ec5a8fc40ebea#%F0%9F%87%AC%F0%9F%87%A7%E2%9A%A1+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B011%5D
+vless://d477293f-c3be-47bb-a9a3-956089552a3c@178.248.238.85:12443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=43dcff53849b81e6#%F0%9F%87%B7%F0%9F%87%BA++%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B012%5D
+vless://d477293f-c3be-47bb-a9a3-956089552a3c@178.248.238.85:11443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=43dcff53849b81e6#%F0%9F%87%A9%F0%9F%87%AA+%F0%9F%8E%AE+%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B013%5D
+vless://d477293f-c3be-47bb-a9a3-956089552a3c@178.248.238.85:11443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=43dcff53849b81e6#%F0%9F%87%A9%F0%9F%87%AA+%F0%9F%8E%AE+%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B014%5D
+vless://d477293f-c3be-47bb-a9a3-956089552a3c@178.248.238.85:11443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=max.ru&sid=43dcff53849b81e6#%F0%9F%87%A9%F0%9F%87%AA+%F0%9F%8E%AE+%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B014%5D
+vless://d477293f-c3be-47bb-a9a3-956089552a3c@178.248.238.85:443?security=reality&encryption=none&echfq=none&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&headerType=none&fp=qq&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=rutube.ru&sid=43dcff53849b81e6#%F0%9F%87%B8%F0%9F%87%AA+%F0%9F%8E%AE+%E2%9A%A1%EF%B8%8F+%D0%91%D0%B5%D0%BB%D1%8B%D0%B9+%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%5B015%5D
