@@ -2,7 +2,7 @@
 #profile-title: 🏳️ TritonVPN
 #profile-web-page-url:
 #support-url: 
-#announce: Это полная подписка, сверху - для мобильного интернета, снизу для wi-fi 
+#announce: Это полная подписка, сверху - для мобильного интернета, снизу для wi-fi  ⚡ - очень быстрый сервер. 💎 - авто ⭐ - для нейросетей. 🎮 - малкнький пинг
 
 #subscription-userinfo: upload=0; download=0; total=0; expire=25555555560576000
 
